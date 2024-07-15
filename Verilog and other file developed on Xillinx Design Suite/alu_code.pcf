@@ -1,0 +1,33 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Jun 15 09:25:03 2022
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "f<0>" LOCATE = SITE "P10" LEVEL 1;
+COMP "f<1>" LOCATE = SITE "P9" LEVEL 1;
+COMP "du<0>" LOCATE = SITE "P137" LEVEL 1;
+COMP "f<2>" LOCATE = SITE "P8" LEVEL 1;
+COMP "du<1>" LOCATE = SITE "P138" LEVEL 1;
+COMP "f<3>" LOCATE = SITE "P7" LEVEL 1;
+COMP "du<2>" LOCATE = SITE "P139" LEVEL 1;
+COMP "du<3>" LOCATE = SITE "P140" LEVEL 1;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "du<4>" LOCATE = SITE "P141" LEVEL 1;
+COMP "du<5>" LOCATE = SITE "P142" LEVEL 1;
+COMP "du<6>" LOCATE = SITE "P143" LEVEL 1;
+COMP "d0" LOCATE = SITE "P32" LEVEL 1;
+COMP "d1" LOCATE = SITE "P33" LEVEL 1;
+COMP "a<0>" LOCATE = SITE "P22" LEVEL 1;
+COMP "a<1>" LOCATE = SITE "P21" LEVEL 1;
+COMP "a<2>" LOCATE = SITE "P17" LEVEL 1;
+COMP "bank<0>" LOCATE = SITE "P127" LEVEL 1;
+COMP "a<3>" LOCATE = SITE "P16" LEVEL 1;
+COMP "bank<1>" LOCATE = SITE "P131" LEVEL 1;
+COMP "b<0>" LOCATE = SITE "P15" LEVEL 1;
+COMP "bank<2>" LOCATE = SITE "P132" LEVEL 1;
+COMP "b<1>" LOCATE = SITE "P14" LEVEL 1;
+COMP "bank<3>" LOCATE = SITE "P133" LEVEL 1;
+COMP "b<2>" LOCATE = SITE "P12" LEVEL 1;
+COMP "b<3>" LOCATE = SITE "P11" LEVEL 1;
+SCHEMATIC END;
+

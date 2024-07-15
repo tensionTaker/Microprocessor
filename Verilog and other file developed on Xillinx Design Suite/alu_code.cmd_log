@@ -1,0 +1,57 @@
+xst -intstyle ise -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -ifn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.xst" -ofn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 "alu_code.ngc" alu_code.ngd  
+map -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter {C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -ifn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.xst" -ofn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 "alu_code.ngc" alu_code.ngd  
+map -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter {C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -ifn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.xst" -ofn "C:/Users/EE Lab/Desktop/harsh/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 "alu_code.ngc" alu_code.ngd  
+map -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter {C:/Users/EE Lab/Desktop/harsh/first_q6/iseconfig/filter.filter} -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+xst -intstyle ise -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -ifn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.xst" -ofn "C:/Users/hp/Desktop/harsh12140750/first_q6/alu_code.syr" 
+ngdbuild -filter "iseconfig/filter.filter" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc harsh.ucf -p xc6slx9-tqg144-3 alu_code.ngc alu_code.ngd  
+map -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o alu_code_map.ncd alu_code.ngd alu_code.pcf 
+par -filter "C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter" -w -intstyle ise -ol high -mt off alu_code_map.ncd alu_code.ncd alu_code.pcf 
+trce -filter C:/Users/hp/Desktop/harsh12140750/first_q6/iseconfig/filter.filter -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml alu_code.twx alu_code.ncd -o alu_code.twr alu_code.pcf -ucf harsh.ucf 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
+bitgen -filter "iseconfig/filter.filter" -intstyle ise -f alu_code.ut alu_code.ncd 
